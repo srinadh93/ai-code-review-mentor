@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+
+# Chroma DB
+chroma_db/
+.chroma_db/
+
+# Environment files
+.env
+
+# Docker
+*.log
+.Dockerfile
+docker-compose.override.yml
+
+# IDE files
+.vscode/

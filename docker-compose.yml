@@ -1,0 +1,14 @@
+services:
+  mentor:
+    build: .
+    container_name: code_mentor_app
+    volumes:
+      - .:/app
+    command: tail -f /dev/null
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD", "python", "-c", "print('OK')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
